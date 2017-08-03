@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int firstSet(int n)
+{
+    int c=1;
+    while(n)
+    {
+        if(n&1)
+        return c;
+        else
+        {
+         c++;
+        
+        n=n>>1; 
+        }
+       
+    }
+    return c;
+}
+int main() {
+    int x;
+    cin>>x;
+    
+    cout<<firstSet(x);
+
+}
