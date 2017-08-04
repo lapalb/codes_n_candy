@@ -18,9 +18,11 @@ int MSA(int a[],int n)
 int MSAK(int a[],int n)
 {
     int m=INT_MIN;
+    int s=0;
     for(int i=0;i<n;i++)
     {
-        
+        s=max(a[i],s+a[i]);
+        m=max(s,m);
 
     }
     return m;
