@@ -9,9 +9,18 @@ int MSA(int a[],int n)
         for(int j=i;j<n;j++)
         {
             res+=a[j];
-            if(m<res)
-            m=res;
+           m=max(m,res);
         }
+
+    }
+    return m;
+}
+int MSAK(int a[],int n)
+{
+    int m=INT_MIN;
+    for(int i=0;i<n;i++)
+    {
+        
 
     }
     return m;
@@ -29,6 +38,6 @@ int main()
         {
             cin>>a[i];
         }
-        cout<<MSA(a,n)<<endl;
+        cout<<MSAK(a,n)<<endl;
     }
 }
