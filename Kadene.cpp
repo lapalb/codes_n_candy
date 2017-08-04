@@ -12,7 +12,7 @@ int MSA(int a[],int n)
             if(m<res)
             m=res;
         }
-        
+
     }
     return m;
 }
@@ -27,7 +27,7 @@ int main()
         int a[n];
         for(int i=0;i<n;i++)
         {
-            cin>>a[n];
+            cin>>a[i];
         }
         cout<<MSA(a,n)<<endl;
     }
