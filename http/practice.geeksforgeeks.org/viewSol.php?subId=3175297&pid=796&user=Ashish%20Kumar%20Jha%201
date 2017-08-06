@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int bleak(int n)
+{
+    for(int i=1;i<n;i++)
+    {
+        if(i+__builtin_popcount(i)==n)
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
+int main()
+ {
+	int t;
+    cin>>t;
+    for(int i=0;i<t;i++)
+    {
+        int n;
+        cin>>n;
+        cout<<bleak(n)<<endl;
+        
+    }
+        
+}
